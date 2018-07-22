@@ -21,7 +21,9 @@
     <div id="app">
         <h2> {{ title }} </h2>
         <p>I earn {{ wage }} pounder per hour.</p>
-        <button @click="increase">Increase wage by $1</button>
+        <button @click="wage++">Increase wage by $1</button>
+        <br>
+        <button @click="wage--">Derease wage by $1</button>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
     <script src="app.js"></script>
