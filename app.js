@@ -26,6 +26,9 @@ new Vue({
         logCoords(event) {
             this.xCoord = event.offsetX;
             this.yCoord = event.offsetY;
+        },
+        updateName(event) {
+            this.name = event.target.value
         }
     }
 })
