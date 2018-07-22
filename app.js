@@ -12,8 +12,11 @@ new Vue({
         greet(time) {
             return `Hello there and good ${time} ${this.name}`;
         },
-        increase() {
-            this.wage++;
+        increase(amount) {
+            this.wage += amount;
+        },
+        decrease(amount) {
+            this.wage -= amount;
         }
     }
 })
