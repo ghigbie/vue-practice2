@@ -4,7 +4,8 @@ new Vue({
         title: 'Becoming a Vue Ninja',
         name: 'Ragnar',
         click: 'This takes you where you need to go!',
-        url: 'http://youtube.com'
+        url: 'http://youtube.com',
+        classes: ['one', 'two']
     },
     methods: {
         greet(time) {
