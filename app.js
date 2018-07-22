@@ -6,7 +6,9 @@ new Vue({
         click: 'This takes you where you need to go!',
         url: 'http://youtube.com',
         classes: ['one', 'two'],
-        wage: 300
+        wage: 300,
+        xCoord: undefined,
+        yCoord: undefined
     },
     methods: {
         greet(time) {
@@ -22,8 +24,8 @@ new Vue({
             console.log(event);
         },
         logCoords(event) {
-            console.log(`The x coordinate is: ${event.offsetX}`);
-            console.log(`The y coordinate is: ${event.offsetY}`);
+            this.xCoord = event.offsetX;
+            this.yCoord = event.offsetY;
         }
     }
 })
