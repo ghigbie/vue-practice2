@@ -20,6 +20,10 @@ new Vue({
         },
         logEvent(event) {
             console.log(event);
+        },
+        logCoords(event) {
+            console.log(`The x coordinate is: ${event.offsetX}`);
+            console.log(`The y coordinate is: ${event.offsetY}`);
         }
     }
 })
