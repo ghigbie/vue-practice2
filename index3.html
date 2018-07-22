@@ -8,30 +8,20 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
     <style>
-        .one{
-            color: blue;
-            text-decoration: line-through;
-        }
-        .two{
-            color: green;
+        .canvas{
+            width: 300px;
+            height: 300px;
+            margin-top: 20px;
+            background: #ddd;
         }
     </style>
 </head>
 <body>
     <div id="app">
         <h2> {{ title }} </h2>
-        <p>I earn {{ wage }} pounder per hour.</p>
-        <button @click="wage++">Increase wage by $1</button>
-        <br>
-        <button @click="wage--">Derease wage by $1</button>
-        <br>
-        <button @click="increase(50)">Increase wage by $50</button>
-        <br>
-        <button @click="decrease(5)">Derease wage by $5</button>
-        <br>
-        <button @dblclick="increase(10)">Increase wage by $10</button>
-        <br>
-        <button @dblclick="decrease(10)">Derease wage by $10</button>
+        <button @click="logEvent">Get Event</button>
+        <div class="canvas"></div>
+
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
     <script src="app.js"></script>
