@@ -7,13 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
+    <style>
+        .one{
+            color: blue;
+            text-decoration: line-through;
+        }
+        .two{
+            color: green;
+        }
+    </style>
 </head>
 <body>
     <div id="app">
         <h2> {{ title }} </h2>
         <p> {{ greet('morning') }} </p>
         <a :href="url"
-           target="_blank">{{ click }}/a>
+           target="_blank">{{ click }}</a>
+        <div :class="classes">Classes from instance</div>
+        <input type="text" :value="name">
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
     <script src="app.js"></script>
